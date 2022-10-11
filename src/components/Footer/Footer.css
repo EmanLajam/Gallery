@@ -1,0 +1,11 @@
+.footer{
+    background-color: black;
+    color: white;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.footer p{
+    margin: 0;
+    font-weight: bold;
+}
