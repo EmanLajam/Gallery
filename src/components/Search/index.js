@@ -21,7 +21,7 @@ const Search = (props) => {
     useEffect(()=>{
         const fetchImages = async () =>{
             const response = await fetch(
-                `https://api.unsplash.com/photos?client_id=oYqjfq7lBMuIHwQjG-YwoOLq52s6Y0qtyliPY56SxZw`
+                `https://api.unsplash.com/photos?client_id=${process.env.REACT_APP_API_KEY}`
             )
 
             const data =await response.json()
@@ -38,7 +38,7 @@ const Search = (props) => {
     
     const SerchImage = async () => {
         const data = await fetch(
-          `https://api.unsplash.com/search/photos?page=1&query=${img}&client_id=oYqjfq7lBMuIHwQjG-YwoOLq52s6Y0qtyliPY56SxZw`
+          `https://api.unsplash.com/search/photos?page=1&query=${img}&client_id=${process.env.REACT_APP_API_KEY}`
         );
         const dataJ = await data.json();
         const result = dataJ.results;
