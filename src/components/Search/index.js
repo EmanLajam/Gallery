@@ -58,7 +58,7 @@ const Search = (props) => {
       };
 
       //Pagination section
-      const imagesPerPage = 4;
+      const imagesPerPage = 5;
       const pagesVisited = pageNumber * imagesPerPage;
 
       const displayImages = res.slice(pagesVisited, pagesVisited + imagesPerPage)
